@@ -3,17 +3,17 @@
 # 6782 -> 23
 # 0,56 -> 11
 
-# number = input('Enter number: ')
+number = input('Enter number: ')
 
-# def SumNumbers(number):
-#     sum = 0
-#     for i in number:
-#      if i != '.':
-#         sum += int(i)
-#     return sum
+def SumNumbers(number):
+    sum = 0
+    for i in number:
+     if i != '.':
+        sum += int(i)
+    return sum
 
 
-# print(f'The sum of the digits of the number  {number} is {SumNumbers(number)} ')
+print(f'The sum of the digits of the number  {number} is {SumNumbers(number)} ')
 
 # 15. Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N.
 # Пример:
@@ -45,14 +45,14 @@
 
 # print(f'Сумма последовательности чисел = {round(sum(my_list2), 2)} ')
 
-## запись решения (my_list2)нашла в интернете, так как не поняла почему 
-##не сработл метод аналогичный MyList(number) c задаванием my_listу вид не словаря а массива (my_list = [])
-##my_list2 = []
-##def MyList2(number):
+# # запись решения (my_list2)нашла в интернете, так как не поняла почему 
+# #не сработл метод аналогичный MyList(number) c задаванием my_listу вид не словаря а массива (my_list = [])
+# #my_list2 = []
+# #def MyList2(number):
    
-##     for i in range (1,number+1):
-##         my_list2[i] = (1+1/i)**i
-##     return my_list2  
+#     # for i in range (1,number+1):
+#     #     my_list2[i] = (1+1/i)**i
+#     # return my_list2  
 
 
 
@@ -82,3 +82,21 @@
 # prd = index1*index2
 
 # print(f'Произведение чисел {n1} и {n2} равно {prd} ')
+
+
+# 18. *Реализуйте алгоритм перемешивания списка.
+
+
+# import random
+
+# lists1 = ['apple','oranges','cherry','10','2022']
+# print(f'Изначальный список {lists1} ')
+# lenght = len(lists1)
+# for i in range(lenght):
+#     j = random.randint(0,lenght - 1)
+#     temp = lists1[i]
+#     lists1[i] = lists1[j]
+#     lists1[j] = temp
+
+# print(f'Перемешаный список: {lists1}')
+
