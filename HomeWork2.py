@@ -41,8 +41,44 @@
 
 # print(f'Cписок из {number} чисел последовательности (1+1/{number})^{number} = {MyList(number)} ')    
 
-# my_list2 = [round((1+1/i)**i, 3) for i in range(1, number+1)]
+# my_list2 = [round((1+1/i)**i, 3) for i in range(1, number+1)] 
 
 # print(f'Сумма последовательности чисел = {round(sum(my_list2), 2)} ')
 
+## запись решения (my_list2)нашла в интернете, так как не поняла почему 
+##не сработл метод аналогичный MyList(number) c задаванием my_listу вид не словаря а массива (my_list = [])
+##my_list2 = []
+##def MyList2(number):
+   
+##     for i in range (1,number+1):
+##         my_list2[i] = (1+1/i)**i
+##     return my_list2  
 
+
+
+# 17. Задайте список из N элементов, заполненных числами из промежутка [-N, N]. 
+# Найдите произведение элементов на введенных пользователем позициях.
+
+# n = int(input('Ведите число '))
+# count = n*2
+# index1 = int(input(f'Ведите номер первого элемента от 0 до {count} : '))
+# index2 = int(input(f'Ведите номер второго элемента от 0 до {count} : '))
+
+# listN = []
+
+# def Lists(n):
+#     for i in range(-n,n+1):
+#       listN.append(i)
+#     return listN  
+        
+# print(f'Список чисел {Lists(n)} ')  
+
+# n1 = listN[index1]
+# n2 = listN[index2]
+
+# index1 = listN[index1]
+# index2 = listN[index2]
+
+# prd = index1*index2
+
+# print(f'Произведение чисел {n1} и {n2} равно {prd} ')
