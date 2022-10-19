@@ -40,4 +40,19 @@
 #     my_list2.append(i- int(i))
 # item = round(max(my_list2)- min(my_list2),3)    
 # print(item)
-   
+
+'''4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+*Пример:*
+
+- 45 -> 101101
+- 3 -> 11
+- 2 -> 10'''
+
+number = int(input('Введите целое число: '))
+n = number
+byn = ''
+while number != 0:
+    byn = str(number % 2) + byn
+    number //=2
+print(f'Бинарное число десятичного {n} = {byn}')
+            
