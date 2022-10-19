@@ -18,12 +18,26 @@
 - [2, 3, 4, 5, 6] => [12, 15, 16];
 - [2, 3, 5, 6] => [12, 15]'''
 
-my_list = [2, 3, 4, 5, 6]
-n = len(my_list)
-len = int(len(my_list)/2+1)
-prd = []
-for i in range (len):
-    n = n - 1
-    prd.append (my_list[i]*my_list[n])
-print(prd) 
+# my_list = [2, 3, 4, 5, 6]
+# n = len(my_list)
+# len = int(len(my_list)/2+1)
+# prd = []
+# for i in range (len):
+#     n = n - 1
+#     prd.append (my_list[i]*my_list[n])
+# print(prd) 
+
+'''3. Задайте список из вещественных чисел. Напишите программу, 
+которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
+*Пример:*
+
+- [1.1, 1.2, 3.1, 5, 10.01] => 0.19'''
+
+# my_list = [1.1,1.2,3.1,5,10.01]
+# print(my_list)
+# my_list2 = []
+# for i in my_list:
+#     my_list2.append(i- int(i))
+# item = round(max(my_list2)- min(my_list2),3)    
+# print(item)
    
