@@ -48,11 +48,40 @@
 - 3 -> 11
 - 2 -> 10'''
 
-number = int(input('Введите целое число: '))
-n = number
-byn = ''
-while number != 0:
-    byn = str(number % 2) + byn
-    number //=2
-print(f'Бинарное число десятичного {n} = {byn}')
+# number = int(input('Введите целое число: '))
+# n = number
+# byn = ''
+# while number != 0:
+#     byn = str(number % 2) + byn
+#     number //=2
+# print(f'Бинарное число десятичного {n} = {byn}')
             
+
+'''5. Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
+*Пример:*
+
+- для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21] '''
+
+number = int(input('Введите целое число: '))
+
+def Fib(n):
+    if n == 1 or n == 2:
+        return 1 
+    else:
+        return Fib(n-1)+Fib(n-2)
+def Fibminus(n):
+    if n == -1 :
+        return 1
+    elif n == 0:
+       return 0 
+    elif n == -2:
+       return -1
+    else:
+        return Fibminus(n+2)-Fibminus(n+1) 
+my_list = []
+for e in range(1,number+1):
+    my_list.append(Fib(e)) 
+my_list2 = []
+for i in range(- number,1):
+    my_list2.append(Fibminus(i))   
+print(f'Для числа {number} список отрицательых и положительных чисел Фибоначчи {my_list2+my_list}')
