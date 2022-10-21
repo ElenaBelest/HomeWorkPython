@@ -61,27 +61,27 @@
 
 - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21] '''
 
-number = int(input('Введите целое число: '))
+# number = int(input('Введите целое число: '))
 
-def Fib(n):
-    if n == 1 or n == 2:
-        return 1 
-    else:
-        return Fib(n-1)+Fib(n-2)
-def Fibminus(n):
-    if n == -1 :
-        return 1
-    elif n == 0:
-       return 0 
-    elif n == -2:
-       return -1
-    else:
-        return Fibminus(n+2)-Fibminus(n+1) 
-my_list = []
-for e in range(1,number+1):
-    my_list.append(Fib(e)) 
-my_list2 = []
-for i in range(- number,1):
-    my_list2.append(Fibminus(i))   
-print(f'Для числа {number} список отрицательных и положительных чисел Фибоначчи {my_list2+my_list}')
+# def Fib(n):
+#     if n == 1 or n == 2:
+#         return 1 
+#     else:
+#         return Fib(n-1)+Fib(n-2)
+# def Fibminus(n):
+#     if n == -1 :
+#         return 1
+#     elif n == 0:
+#        return 0 
+#     elif n == -2:
+#        return -1
+#     else:
+#         return Fibminus(n+2)-Fibminus(n+1) 
+# my_list = []
+# for e in range(1,number+1):
+#     my_list.append(Fib(e)) 
+# my_list2 = []
+# for i in range(- number,1):
+#     my_list2.append(Fibminus(i))   
+# print(f'Для числа {number} список отрицательных и положительных чисел Фибоначчи {my_list2+my_list}')
 
