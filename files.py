@@ -1,5 +1,5 @@
-import homework_3
-print(homework_3.fib(8))
+# import homework_3
+# print(homework_3.fib(8))
 
 
 
