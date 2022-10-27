@@ -19,7 +19,7 @@
 # # print(info)
 # with open('D:/Lena/Geekbrains/HomeWork/HWPython/HomeWork4/users_hobby.txt', 'w',encoding='utf-8') as out:
 #     for key, val in info.items():
-#         out.write('{}:{}\n'.format(key, val))
+#         out.write('{}:{}'.format(key, val))
 '''Проверка видимости файлов.У меня возникла проблема, что файлы txt не виделись python, поэтому пришлось прописывать весь путь'''
 # import os
 # # print (os.getcwd())
@@ -63,3 +63,18 @@
 (значения от 0 до 100) многочлена и записать в файл многочлен степени k.
 Пример:
 k=2 => 2x² + 4x + 5 = 0 или x² + 5 = 0 или 10x² = 0'''
+
+
+# from random import randint
+
+# k = int(input('Введите натуральную степень k:'))
+# koeff=[randint(0,101) for i in range(k)]+[randint(1,101)]
+# poly='+'.join([f'{(j,"")[j==1]}x^{i}' for i, j in enumerate(koeff) if j][::-1])
+# # Поиск и замены:
+# poly=poly.replace('x^1+', 'x+')
+# poly=poly.replace('x^0', '')
+# poly+=('','1')[poly[-1]=='+']
+# poly=(poly, poly[:-2])[poly[-2:]=='^1']
+# print(poly)
+
+
