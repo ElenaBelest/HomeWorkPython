@@ -77,4 +77,7 @@ k=2 => 2x² + 4x + 5 = 0 или x² + 5 = 0 или 10x² = 0'''
 # poly=(poly, poly[:-2])[poly[-2:]=='^1']
 # print(poly)
 
+# with open('D:/Lena/Geekbrains/HomeWork/HWPython/HomeWork4/polynomial.txt', 'w') as out:
+#      out.writelines(' '.join(poly))
+  
 
